@@ -1,10 +1,9 @@
 {
   "name": "html-tailwind-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "A starter for simle html tailwind styled project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "postcss styles.css -o src/styles.css --watch",
     "live": "live-server src --port=8080"
   },
