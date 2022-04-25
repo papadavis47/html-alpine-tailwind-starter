@@ -6,16 +6,25 @@
     <meta name="description" content="Basic HTML/Tailwind starter" />
     <meta name="author" content="Daily Dev Tips" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="w-screen h-screen bg-blue-800 flex flex-col items-center md:justify-center">
-      <div class="p-6 flex flex-col align-center">
-        <h1 class="text-center w-full text-3xl text-white">
+    <div class="flex flex-col items-center w-screen h-screen bg-blue-800 md:justify-center">
+      <div class="flex flex-col items-center justify-center p-6 text-white">
+        <h1 class="w-full text-3xl text-center">
           My Plain <code class="text-yellow-200">`html`</code> tailwind starter
         </h1>
-        <p class="text-white text-center mt-4 text-2xl">Here is a sample paragraph...</p>
-        <p class="text-white text-center">Here is anothe line</p>
+        <p class="mt-4 text-2xl">Here is a sample paragraph...</p>
+        <p class="my-4">Here is anothe line</p>
+        <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
+      </div>
+      <div class="text-white" x-data="{ open: false }">
+        <button class="px-3 py-2 text-red-800 bg-yellow-200 rounded" @click="open = ! open">
+          Toggle
+        </button>
+
+        <div x-show="open" @click.outside="open = false"><p class="mt-3">Contents...</p></div>
       </div>
     </div>
   </body>
