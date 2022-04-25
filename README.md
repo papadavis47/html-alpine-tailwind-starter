@@ -7,3 +7,5 @@ Use as starter repo and go from here.
 Some of the meta info in the head was lifted from Josh Comeau's starter found at:
 
 https://www.joshwcomeau.com/snippets/html/html-skeleton/
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4b71345e-4f30-4b89-9106-0c12531807e2/deploy-status)](https://app.netlify.com/sites/html-alpine-tailwind-starter/deploys)
