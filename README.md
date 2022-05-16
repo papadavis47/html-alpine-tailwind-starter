@@ -8,7 +8,9 @@ To use the repo using the GitHub CLI do the following command:
 
 `gh repo create <new-repo-name> --public --template html-alpine-tailwind-starter`
 
-The run:
+Clone the new repo down and `cd` into it.
+
+Then run:
 
 ```bash
 yarn
