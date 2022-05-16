@@ -4,6 +4,21 @@ Check the package.json file for scripts to use when working with this in develop
 
 Use as starter repo and go from here.
 
+To use the repo using the GitHub CLI do the following command:
+
+`gh repo create <new-repo-name> --public --template html-alpine-tailwind-starter`
+
+The run:
+
+```bash
+yarn
+
+# Followed by:
+
+yarn build
+
+```
+
 Some of the meta info in the head was lifted from Josh Comeau's starter found at:
 
 https://www.joshwcomeau.com/snippets/html/html-skeleton/
